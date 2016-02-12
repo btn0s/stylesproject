@@ -1,0 +1,123 @@
+
+<!doctype html>
+<html class="no-js" lang="en" ng-app="blogApp">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styles Project</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+  </head>
+  <body>
+
+    <a name="top"></a>
+    <nav class="top-bar">
+      <section class="top-bar-right">
+        <menu class="menu">
+          <li><a id="about-nav" class="button clear-bg">about</a></li>
+          <li id="blog-btn"><a class="button clear-bg">blog</a></li>
+          <li><a id="contact-nav" class="button clear-bg">contact</a></li>
+        </menu>
+      </section>
+      <section class="top-bar-left">
+        <menu class="menu">
+          <li><a href="https://twitter.com/btn0s" target="_blank"><div class="fa fa-twitter"></div></a></li>
+        </menu>
+      </section>
+    </nav>
+    
+    <main class="main-wrapper text-center">
+      <section class="hero">
+        <div class="row align-center">
+          <div class="small-12 columns">
+            <h1 class="logo">Styles Project</h1>
+          </div>
+          <div class="small-12 columns hide-for-small-only">
+            <span id="sub">exploring the beautiful web</span>
+          </div>
+          <div class="cta-row small-12 columns">
+            <span class="cta"><a id="random">randomize</a></span>
+          </div>
+          <div class="cta-row small-12 columns">
+            <a id="about-cta">or learn more</a>
+            </br>
+            <div class="fa fa-chevron-down"></div>
+          </div>
+        </div>
+      </section>
+    
+      <a name="about"></a>
+      <section class="about">
+        <section class="about-inner">
+          <div class="row align-center">
+            <div class="small-12 medium-6 columns">
+              <h5>As someone who enjoys both <b>philosophy</b> and <b>design</b>, it's only natural for me to want to start off my web ventures with a little inquiry.</h5>
+              <h4>Over the next <b style="color: #ff9">five weeks</b> I'm going to explore <b style="color: #ff9">five styles.</b> My goal is to build a new version of my personal site for each style.</h4>
+              <h5>Head over to the blog and check out the latest updates and musings, and make sure you follow me on twitter so you'll know when cool new stuff is up.</h5>
+            </div>
+          </div>
+        </section>
+      </section>
+    
+      <a name="contact"></a>
+      <section class="contact">
+        <section class="contact-inner">
+          <div class="row align-center">
+            <div class="small-12 medium-6 columns">
+              <h3>If you like what you see and would like to work with me, or just have questions about this project</h3>
+              <h3 class="show-for-small-only">you can email me 
+              <a style="color: #ff9" href="mailto:notbrendantanner@gmail.com" target="_top">(tap here)</a></h3>
+              <h3 class="hide-for-small-only">you can email me 
+              <a style="color: #ff9" href="mailto:notbrendantanner@gmail.com" target="_top">(click here)</a></h3>
+              <h3>or give me a little info and I'll get in touch with you pronto!</h3>
+            </div>
+          </div>
+          <div class="row align-center">
+            <div class="small-12 medium-6 large-3 columns">
+              <form>
+                <label>
+                  <label>
+                  <span>Name</span>
+                  <input type="text" placeholder="me"></input>
+                </label>
+                  <span>Email</span>
+                  <input type="text" placeholder="me@email.com"></input>
+                </label>
+                <button type="submit" class="button alert">submit</button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </section>
+    
+    </main>
+    
+    <script type="text/javascript">
+      function scrollToAnchor(aid){
+        var aTag = $("a[name='"+ aid +"']");
+        $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+      }
+    
+      $("#about-nav").click(function() {
+        scrollToAnchor('about');
+      });
+    
+      $("#contact-nav").click(function() {
+        scrollToAnchor('contact');
+      });
+    
+      $("#about-cta").click(function() {
+        scrollToAnchor('about');
+      });
+    </script>
+
+    <script src="assets/js/app.js"></script>
+  </body>
+
+</html>
